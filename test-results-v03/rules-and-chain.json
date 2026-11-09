@@ -1,0 +1,102 @@
+{
+  "assertions": 339,
+  "cases": [
+    [
+      "Mayor Bun will tow every car to the dump.",
+      "tow_cars"
+    ],
+    [
+      "Driver Ted will tow every crumb to the dump.",
+      "tow_crumbs"
+    ],
+    [
+      "Mayor Bun will park his car to the dump.",
+      "park_dump"
+    ],
+    [
+      "Mayor Bun will park his car on Main Street today.",
+      "park_street"
+    ],
+    [
+      "Warden Coo will fine every car on Main Street.",
+      "fine_cars"
+    ],
+    [
+      "Warden Coo will fine every crumb on Main Street.",
+      "fine_crumbs"
+    ],
+    [
+      "Warden Coo will tax every car on Main Street.",
+      "tax_cars"
+    ],
+    [
+      "Baker Mo will tax every crumb on Main Street.",
+      "tax_crumbs"
+    ],
+    [
+      "Mayor Bun will move town hall to the dump.",
+      "relocate"
+    ],
+    [
+      "Pigeons ate every car on Main Street.",
+      "eat_cars"
+    ],
+    [
+      "Pigeons ate every crumb on Main Street.",
+      "eat_crumbs"
+    ],
+    [
+      "Mayor Bun will give free cake on Main Street today!",
+      "cake"
+    ],
+    [
+      "Do not tow every car to the dump.",
+      "ban_tow"
+    ],
+    [
+      "Do not tow every car to the dump will tow every car.",
+      "confused"
+    ],
+    [
+      "Do not fine every car.",
+      "confused"
+    ],
+    [
+      "Mayor Bun will tow.",
+      "confused"
+    ],
+    [
+      "Pigeons ate every car. Mayor Bun will park his car.",
+      "confused"
+    ]
+  ],
+  "chain": [
+    {
+      "cards": [
+        "c2",
+        "c4"
+      ],
+      "sentence": "Mayor Bun will tow every car to the dump.",
+      "p": 0.125,
+      "event": "tow_cars"
+    },
+    {
+      "cards": [
+        "move",
+        "c2"
+      ],
+      "sentence": "Mayor Bun will move town hall to the dump.",
+      "p": 0.5,
+      "event": "relocate"
+    },
+    {
+      "cards": [
+        "tax",
+        "c3"
+      ],
+      "sentence": "Warden Coo will tax every car on Main Street.",
+      "p": 0.25,
+      "event": "tax_cars"
+    }
+  ]
+}

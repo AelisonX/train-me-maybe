@@ -1,0 +1,31 @@
+{
+  "days": [
+    {
+      "day": 1,
+      "reachablePools": 1,
+      "combinations": 20,
+      "outputChecks": 258,
+      "nextPools": 85,
+      "uniqueModels": 20
+    },
+    {
+      "day": 2,
+      "reachablePools": 85,
+      "combinations": 5992,
+      "outputChecks": 70701,
+      "nextPools": 5642,
+      "uniqueModels": 2110
+    },
+    {
+      "day": 3,
+      "reachablePools": 5642,
+      "combinations": 772073,
+      "outputChecks": 9126041,
+      "nextPools": 0,
+      "uniqueModels": 48624
+    }
+  ],
+  "probabilityRows": 50754,
+  "uniqueModels": 48624,
+  "coverage": "EXHAUSTIVE through day 3 over every positive-probability output of every legal 2/3-card choice, including every possible historical announcement. Histories with identical text multisets are merged; event IDs and unlocked cards do not depend on state in v0.3. State-dependent report variants and mutations are checked separately by test_v03.js. Per-row probabilities are conditional on selected cards not an overall probability over player strategies."
+}
